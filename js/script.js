@@ -86,3 +86,28 @@ function deleteBooking(id) {
   localStorage.setItem("bookings", JSON.stringify(updatedBookings));
   displayBookings();
 }
+
+function renderBookingHTML(booking) {
+    return `
+        <div class="booking-item">
+            <p><strong>Nama Pemesan:</strong> ${booking.name}</p>
+            <p><strong>Nomor HP:</strong> ${booking.phone}</p>
+            <p><strong>Layanan:</strong> ${booking.serviceType}</p>
+            <p><strong>Lokasi:</strong> ${booking.location}</p>
+            <p><strong>Tanggal:</strong> ${booking.date}</p>
+            <p><strong>Catatan:</strong> ${booking.notes || "Tidak ada catatan"}</p>
+            <button onclick="deleteBooking(${booking.id})" class="delete-btn">Hapus</button>
+        </div>`;
+}
+
+function saveToLocalStorage(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
+}
+
+function getFromLocalStorage(key) {
+    return JSON.parse(localStorage.getItem(key)) || [];
+}
+
+let bookings = getFromLocalStorage("bookings");
+bookings.push(booking);
+saveToLocalStorage("bookings", bookings);

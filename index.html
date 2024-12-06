@@ -8,7 +8,7 @@
       "@type": "LocalBusiness",
       "name": "HomeEase",
       "description": "Solusi layanan rumah tangga terpercaya",
-      "url": "https://homeease.example.com",
+      "url": "https://basriyoung.github.io/",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Your City",
@@ -20,6 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HomeEase - Solusi layanan rumah tangga terpercaya.">
   <title>HomeEase - Pemesanan Layanan Rumah Tangga</title>
+  <meta name="dicoding:email" content="basriyoung@gmail.com">
   <link rel="icon" href="images/H.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,7 @@
 <body>
      <!-- B243051A - Basri -->
   <header>
+    <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
     <nav>
       <a href="#services">Layanan</a>
       <a href="#about">Tentang Kami</a>
@@ -45,7 +47,7 @@
   </header>
   <main>
 
-    <section>
+    <section id="services">
         <h2>Tentang Layanan Kami</h2>
         <div class="services">
           <div class="service-item">
@@ -66,7 +68,7 @@
         </div>
       </section>
   
-      <section>
+      <section id="about">
         <h2>Pentingnya Layanan Rumah Tangga</h2>
         <p>Menjaga rumah tetap bersih dan nyaman sangat penting untuk kesehatan dan produktivitas keluarga. 
         Namun, kesibukan sehari-hari seringkali menyulitkan Anda untuk mengelola semuanya. 
@@ -75,7 +77,7 @@
         <p><strong>Pesan sekarang</strong> dan nikmati kemudahan serta kenyamanan dengan layanan terbaik dari kami!</p>
       </section>
 
-    <section>
+    <section id="contact">
       <h2>Form Pemesanan</h2>
       <form id="bookingForm">
         <label for="name">Nama Pemesan</label>
@@ -97,7 +99,7 @@
         <button type="submit">Pesan Sekarang</button>
       </form>
     </section>
-    <section>
+    <section id="bookings">
       <h2>Daftar Pemesanan</h2>
       <div id="bookingsList"></div>
     </section>
