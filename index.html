@@ -180,10 +180,6 @@ h1{font-size:clamp(30px,4.4vw,44px); font-weight:800; margin:20px 0 16px}
 .profile-head{display:flex; gap:15px; align-items:center; margin-bottom:20px}
 /*
   FOTO PROFIL
-  Ganti blok .avatar di bawah dengan foto asli Anda:
-  <img class="avatar-img" src="foto-profil.jpg" width="60" height="60"
-       alt="Hasan Basri" loading="lazy">
-  Ukuran ideal 400x400 px, wajah terlihat jelas, latar rapi.
 */
 .avatar{width:60px; height:60px; border-radius:17px; flex:none; position:relative; background:linear-gradient(135deg,#0284c7,#7c3aed); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:21px}
 .avatar::after{content:""; position:absolute; right:-2px; bottom:-2px; width:15px; height:15px; border-radius:50%; background:#10b981; border:3px solid var(--bg-alt)}
@@ -459,8 +455,8 @@ footer.site{background:var(--bg-alt); border-top:1px solid var(--line); padding-
 
     <div class="card profile-card">
       <div class="profile-head">
-        <!-- Ganti baris di bawah dengan foto asli, lihat catatan di CSS -->
-        <span class="avatar" aria-hidden="true">HB</span>
+          <img class="avatar-img" src="basri.jpg" width="60" height="60"
+                alt="Hasan Basri" loading="lazy">
         <div>
           <h2>Hasan Basri</h2>
           <p>Systems Administrator &amp; CV Engineer</p>
